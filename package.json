@@ -4,7 +4,8 @@
   "description": "Project for storing postman tests",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+   
+    "api-tests-prod":"newman run APC_APIs_Tests.postman_collection"
   },
   "author": "Anil kumar B",
   "license": "ISC"
