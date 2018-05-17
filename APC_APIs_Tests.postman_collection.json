@@ -1,0 +1,196 @@
+{
+	"info": {
+		"_postman_id": "a4e82a03-c6cc-496d-bf3f-403290cc5799",
+		"name": "APC_APIs_Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ftp-stg.bazaarvoice.com\n",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "87bab2da-d41e-4196-b7f3-6c8408e459fb",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "ftp-stg.bazaarvoice.com",
+					"host": [
+						"ftp-stg",
+						"bazaarvoice",
+						"com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://sabrixqa.apc.com:8080/sabrix/xmlinvoice\n\n",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "92e30fe6-ef4e-49ce-807f-c2d1c79e5c21",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://sabrixqa.apc.com:8080/sabrix/xmlinvoice",
+					"protocol": "http",
+					"host": [
+						"sabrixqa",
+						"apc",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"sabrix",
+						"xmlinvoice"
+					]
+				},
+				"description": "Sabrix API"
+			},
+			"response": []
+		},
+		{
+			"name": "https://ics2ws.ic3.com/commerce/1.x/transactionProcessor/\n\n",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e350b261-087a-4db1-b745-9e5e4e3c2476",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://ics2ws.ic3.com/commerce/1.x/transactionProcessor/",
+					"protocol": "https",
+					"host": [
+						"ics2ws",
+						"ic3",
+						"com"
+					],
+					"path": [
+						"commerce",
+						"1.x",
+						"transactionProcessor",
+						""
+					]
+				},
+				"description": "Cybersource Connectivity API"
+			},
+			"response": []
+		},
+		{
+			"name": "http://www.apc.com/webservices/apc_header_footer_ws.cfc?wsdl \n\n",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0437b8e1-e09c-4e15-8f93-cf215224d517",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://www.apc.com/webservices/apc_header_footer_ws.cfc?wsdl \n\n&wsdl",
+					"protocol": "http",
+					"host": [
+						"www",
+						"apc",
+						"com"
+					],
+					"path": [
+						"webservices",
+						"apc_header_footer_ws.cfc"
+					],
+					"query": [
+						{
+							"key": "wsdl \n\n",
+							"value": null
+						},
+						{
+							"key": "wsdl",
+							"value": null
+						}
+					]
+				},
+				"description": "SDL_Header_Footer"
+			},
+			"response": []
+		},
+		{
+			"name": "uploads.google.com\n\n",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "340f8d8d-f5d5-4fbe-b73f-a53bbd2ade0d",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "uploads.google.com",
+					"host": [
+						"uploads",
+						"google",
+						"com"
+					]
+				},
+				"description": "FTP:Google Product Syndication FTP Server"
+			},
+			"response": []
+		}
+	]
+}
